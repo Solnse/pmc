@@ -3,7 +3,7 @@ class CreditCardsController < ApplicationController
   # GET /credit_cards
   # GET /credit_cards.json
   def index
-    @credit_cards = CreditCard.all
+    @credit_cards = CreditCard.all.entries.sort_by { |l| - l.redemption_value }
 
     respond_to do |format|
       format.html # index.html.erb

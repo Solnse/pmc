@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  bank: MyString
+  type: 
+  interest: 1.5
+  benefit_type: MyString
+  benefit_earn_rate: MyString
+  benefit_value: 1.5
+
+two:
+  name: MyString
+  bank: MyString
+  type: 
+  interest: 1.5
+  benefit_type: MyString
+  benefit_earn_rate: MyString
+  benefit_value: 1.5

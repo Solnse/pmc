@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @credit_card.name %>
+</p>
+
+<p>
+  <b>Bank:</b>
+  <%= @credit_card.bank %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @credit_card.brand %>
+</p>
+
+<p>
+  <b>Interest:</b>
+  <%= @credit_card.interest %>
+</p>
+
+<p>
+  <b>Benefit type:</b>
+  <%= @credit_card.benefit_type %>
+</p>
+
+<p>
+  <b>Benefit earn rate:</b>
+  <%= @credit_card.benefit_earn_rate %>
+</p>
+
+<p>
+  <b>Benefit value:</b>
+  <%= @credit_card.benefit_value %>
+</p>
+
+
+<%= link_to 'Edit', edit_credit_card_path(@credit_card) %> |
+<%= link_to 'Back', credit_cards_path %>

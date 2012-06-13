@@ -1,0 +1,57 @@
+<%= form_for(@credit_card) do |f| %>
+  <% if @credit_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@credit_card.errors.count, "error") %> prohibited this credit_card from being saved:</h2>
+
+      <ul>
+      <% @credit_card.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :bank %><br />
+    <%= f.text_field :bank %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :interest %><br />
+    <%= f.text_field :interest %>
+  </div>
+  <div class="field">
+    <%= f.label :benefit_type %><br />
+    <%= f.text_field :benefit_type %>
+  </div>
+  <div class="field">
+    <%= f.label :benefit_earn_rate %><br />
+    <%= f.text_field :benefit_earn_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :benefi_value %><br />
+    <%= f.text_field :benefit_value %>
+  </div>
+  <div class="field">
+    <%= f.label :goal_name %><br />
+    <%= f.text_field :goal_name %>
+  </div>
+  <div class="field">
+    <%= f.label :goal_cost %><br />
+    <%= f.text_field :goal_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :goal_value %><br />
+    <%= f.text_field :goal_value %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

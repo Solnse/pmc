@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120613091057) do
+ActiveRecord::Schema.define(:version => 20120614080729) do
 
   create_table "credit_cards", :force => true do |t|
     t.string   "name"
@@ -27,6 +27,21 @@ ActiveRecord::Schema.define(:version => 20120613091057) do
     t.integer  "goal_cost"
     t.float    "goal_value"
     t.float    "redemption_value"
+  end
+
+  create_table "places", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "crossStreet"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip"
+    t.string   "category"
+    t.string   "description"
+    t.string   "url"
+    t.string   "avgPrice"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

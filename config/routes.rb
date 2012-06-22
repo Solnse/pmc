@@ -1,4 +1,6 @@
 Pmc::Application.routes.draw do
+
+  resources :places
   resources :credit_cards
 
   root to: 'credit_cards#index'

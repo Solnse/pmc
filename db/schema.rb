@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120614080729) do
+ActiveRecord::Schema.define(:version => 20120710220625) do
 
   create_table "credit_cards", :force => true do |t|
     t.string   "name"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(:version => 20120614080729) do
     t.string   "brand"
     t.float    "interest"
     t.string   "benefit_type"
-    t.string   "benefit_earn_rate"
     t.float    "benefit_value"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
@@ -27,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20120614080729) do
     t.integer  "goal_cost"
     t.float    "goal_value"
     t.float    "redemption_value"
+    t.integer  "benefit_earn_rate"
   end
 
   create_table "places", :force => true do |t|

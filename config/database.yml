@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: pmc_development
+  database: db/pmc_development
   username: 
   password: 
   pool: 5

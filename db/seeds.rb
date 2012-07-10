@@ -11,11 +11,11 @@ Place.find_or_create_by_name(name: 'Stacked Sandwiches', address: '191 S. Oak Pa
 
 Place.find_or_create_by_name(name: 'Baja Fresh', address: '933 Rancho Parkway', 
 	                     city: 'Arroyo Grande', state: 'CA', zip: '93421', category: 'Mexican',
-	                     avgprice: 'under $10', description: '5 miles per dollar / mpdining network')
+	                     avgPrice: 'under $10', description: '5 miles per dollar / mpdining network')
 
 Place.find_or_create_by_name(name: 'El Taco Loco', address: '106 E Branch St ', 
 	                     city: 'Arroyo Grande', state: 'CA', zip: '93421', category: 'Mexican',
-	                     avgprice: 'under $20', description: '5 miles per dollar / mpdining network')
+	                     avgPrice: 'under $20', description: '5 miles per dollar / mpdining network')
 
 CreditCard.find_or_create_by_name(name: 'United Mileage Plus', bank: 'Chase', brand: 'Visa', interest: '14.99', 
 	                        benefit_type: 'miles', benefit_earn_rate: '1', goal_name: 'airline ticket',

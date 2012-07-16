@@ -3,10 +3,10 @@ class CreditCard < ActiveRecord::Base
                   :goal_name, :goal_cost, :goal_value, :goal
 
   def redemption_value 
-    self.goal * self.benefit_earn_rate.to_f
+    self.goal * self.benefit_earn_rate
   end
 
   def goal
-  	self.goal_value.to_f / self.goal_cost.to_f
+  	(self.goal_value * 100).to_i / self.goal_cost
   end
 end

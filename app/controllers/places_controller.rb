@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
   # GET /places
   # GET /places.json
   def index
-    @places = Place.all.sort_by { |l| l.avgPrice }
+    @places = Place.all
 
     respond_to do |format|
       format.html # index.html.erb

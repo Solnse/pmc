@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Place.find_or_create_by_name(name: 'Stacked Sandwiches', address: '191 S. Oak Park Blvd Ste 1', 
 	                     city: 'Grover Beach', state: 'CA', zip: '93421', category: 'Subs, Sandwiches',
-	                     description: '5 miles per dollar / mpdining network')
+	                     avgPrice: 'under $10', description: '5 miles per dollar / mpdining network')
 
 Place.find_or_create_by_name(name: 'Baja Fresh', address: '933 Rancho Parkway', 
 	                     city: 'Arroyo Grande', state: 'CA', zip: '93421', category: 'Mexican',

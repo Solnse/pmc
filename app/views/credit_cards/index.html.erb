@@ -26,8 +26,8 @@
     <td><%= credit_card.interest %></td>
     <td><%= credit_card.benefit_type %></td>
     <td><%= credit_card.benefit_earn_rate %></td>
-    <td><%= number_to_currency((credit_card.redemption_value.to_f / 100), :precision => 3) %></td>
-    <td><%= number_to_currency(credit_card.goal, :precision => 3) %></td>
+    <td><%= number_to_currency(credit_card.redemption_value, :precision => 2) %></td>
+    <td><%= number_to_currency(credit_card.goal, :precision => 2) %></td>
     <td><%= credit_card.goal_name %></td>
     <td><%= credit_card.goal_cost %></td>
     <td><%= number_to_currency(credit_card.goal_value, :precision => 2)%></td>

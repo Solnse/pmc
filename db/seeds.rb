@@ -7,15 +7,15 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Place.find_or_create_by_name(name: 'Stacked Sandwiches', address: '191 S. Oak Park Blvd Ste 1', 
 	                     city: 'Grover Beach', state: 'CA', zip: '93421', category: 'Subs, Sandwiches',
-	                     avgPrice: 'under $10', description: '5 miles per dollar / mpdining network')
+	                     avgPrice: '10', description: '5 miles per dollar / mpdining network')
 
 Place.find_or_create_by_name(name: 'Baja Fresh', address: '933 Rancho Parkway', 
 	                     city: 'Arroyo Grande', state: 'CA', zip: '93421', category: 'Mexican',
-	                     avgPrice: 'under $10', description: '5 miles per dollar / mpdining network')
+	                     avgPrice: '10', description: '5 miles per dollar / mpdining network')
 
 Place.find_or_create_by_name(name: 'El Taco Loco', address: '106 E Branch St ', 
 	                     city: 'Arroyo Grande', state: 'CA', zip: '93421', category: 'Mexican',
-	                     avgPrice: 'under $20', description: '5 miles per dollar / mpdining network')
+	                     avgPrice: '20', description: '5 miles per dollar / mpdining network')
 
 CreditCard.find_or_create_by_name(name: 'United Mileage Plus', bank: 'Chase', brand: 'Visa', interest: '14.99', 
 	                        benefit_type: 'miles', benefit_earn_rate: '1', goal_name: 'airline ticket',

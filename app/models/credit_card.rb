@@ -4,14 +4,14 @@ class CreditCard < ActiveRecord::Base
 
 
   def redemption_value 
-    self.redemption_result.to_f / 100
+    self.goal_result.to_f / 100
   end
 
   def goal
   	(self.goal_value * 100) / (self.goal_cost * 100)
   end
 
-  def redemption_result
+  def goal_result
     self.goal * (self.benefit_earn_rate * 100)
   end
 end

@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.5'
 gem 'heroku'
 gem 'twitter-bootstrap-rails'
+gem 'oauth2'
+gem 'devise', :git => "http://github.com/plataformatec/devise.git"
+gem 'warden_oauth'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

@@ -1,5 +1,6 @@
 
 class CreditCardsController < ApplicationController
+  before_filter :authenticate_user!
   # GET /credit_cards
   # GET /credit_cards.json
   def index
